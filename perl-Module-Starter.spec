@@ -1,7 +1,7 @@
 %define	module	Module-Starter
 %define	name	perl-%{module}
-%define version 1.42
-%define release %mkrel 2
+%define version 1.43_01
+%define release %mkrel 1
 
 Name:		%{name}
 Version:	%{version}
@@ -32,6 +32,8 @@ just one method, create_distro.
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
 %make
+
+%check
 %make test
 
 %install
