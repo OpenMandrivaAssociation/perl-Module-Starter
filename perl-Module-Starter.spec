@@ -1,7 +1,7 @@
 %define	module	Module-Starter
 %define	name	perl-%{module}
-%define version 1.470
-%define release %mkrel 4
+%define version 1.50
+%define release %mkrel 1
 
 Name:		%{name}
 Version:	%{version}
@@ -9,7 +9,7 @@ Release:	%{release}
 Summary:	A simple starter kit for any module 
 License:	GPL or Artistic
 Group:		Development/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Module/%{module}-%{version}.tar.bz2
+Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Module/%{module}-%{version}.tar.gz
 Url:		http://search.cpan.org/dist/{module}/
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 %if %{mdkversion} < 1010
