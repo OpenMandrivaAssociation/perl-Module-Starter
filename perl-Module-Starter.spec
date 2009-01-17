@@ -16,6 +16,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}
 Buildrequires:	perl-devel
 %endif
 Buildarch:	noarch
+Epoch: 1
 
 %description
 This is the core module for Module::Starter. If you're not looking to extend or
