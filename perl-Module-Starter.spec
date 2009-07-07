@@ -1,22 +1,22 @@
-%define	module	Module-Starter
-%define	name	perl-%{module}
-%define version 1.470
-%define release %mkrel 1
+%define	upstream_name	 Module-Starter
+%define upstream_version 1.50
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:	 perl-%{upstream_name}
+Version: %perl_convert_version %{upstream_version}
+Release: %mkrel 1
+Epoch:   1
+
 Summary:	A simple starter kit for any module 
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Module/%{module}-%{version}.tar.gz
-Url:		http://search.cpan.org/dist/{module}/
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+Url:		http://search.cpan.org/dist/{upstream_name}/
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Module/%{upstream_name}-%{upstream_version}.tar.gz
+
 %if %{mdkversion} < 1010
 Buildrequires:	perl-devel
 %endif
-Buildarch:	noarch
-Epoch: 1
+Buildarch: noarch
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This is the core module for Module::Starter. If you're not looking to extend or
@@ -28,7 +28,7 @@ builder scripts, tests, documentation, and module code. This is done through
 just one method, create_distro.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
