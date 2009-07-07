@@ -3,13 +3,13 @@
 
 Name:	 perl-%{upstream_name}
 Version: %perl_convert_version %{upstream_version}
-Release: %mkrel 1
+Release: %mkrel 2
 Epoch:   1
 
 Summary:	A simple starter kit for any module 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/{upstream_name}/
+Url:		http://search.cpan.org/dist/%{upstream_name}/
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Module/%{upstream_name}-%{upstream_version}.tar.gz
 
 %if %{mdkversion} < 1010
