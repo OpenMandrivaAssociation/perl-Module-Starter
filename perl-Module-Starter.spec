@@ -1,5 +1,5 @@
 %define	upstream_name	 Module-Starter
-%define upstream_version 1.52
+%define upstream_version 1.54
 
 Name:	 perl-%{upstream_name}
 Version: %perl_convert_version %{upstream_version}
@@ -50,4 +50,3 @@ rm -rf %{buildroot}
 %{_bindir}/*
 %{perl_vendorlib}/*
 %{_mandir}/*/*
-
