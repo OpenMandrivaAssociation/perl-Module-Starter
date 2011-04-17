@@ -1,5 +1,5 @@
 %define	upstream_name	 Module-Starter
-%define upstream_version 1.54
+%define upstream_version 1.57
 
 Name:	 perl-%{upstream_name}
 Version: %perl_convert_version %{upstream_version}
