@@ -1,9 +1,9 @@
 %define	upstream_name	 Module-Starter
-%define upstream_version 1.57
+%define upstream_version 1.58
 
 Name:	 perl-%{upstream_name}
 Version: %perl_convert_version %{upstream_version}
-Release: %mkrel 2
+Release: %mkrel 1
 Epoch:   1
 
 Summary:	A simple starter kit for any module 
