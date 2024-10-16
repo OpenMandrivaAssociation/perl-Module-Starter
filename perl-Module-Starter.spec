@@ -7,7 +7,7 @@ Release:	1
 Summary:	A simple starter kit for any module 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}/
+Url:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Module/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires:	perl-devel
