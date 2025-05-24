@@ -1,7 +1,7 @@
 %define	upstream_name	 Module-Starter
 
 Name:		perl-%{upstream_name}
-Version:	1.77
+Version:	1.78
 Release:	1
 
 Summary:	A simple starter kit for any module 
